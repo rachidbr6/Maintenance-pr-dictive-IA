@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+build/
+dist/
+
+# Données et modèles : rien de lourd ni de confidentiel dans le dépôt
+data/*.csv
+data/*.parquet
+models/
+*.joblib
+
+# Secrets
+.env
+config/*.local.*
+
+# Sorties
+reports/
+*.html
+.pytest_cache/
+.ruff_cache/
+.DS_Store

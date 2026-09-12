@@ -1,0 +1,23 @@
+[project]
+name = "ocp-predictive-maintenance"
+version = "0.1.0"
+description = "Pipeline IoT et diagnostic vibratoire pour la maintenance predictive d'equipements tournants"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.11",
+    "pandas>=2.0",
+    "scikit-learn>=1.3",
+    "joblib>=1.3",
+    "paho-mqtt>=1.6",
+    "influxdb-client>=1.38",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4", "ruff>=0.1"]
+
+[tool.setuptools.packages.find]
+include = ["src*"]
+
+[tool.ruff]
+line-length = 100
